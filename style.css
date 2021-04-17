@@ -1,0 +1,87 @@
+html {
+  height: 100%;
+}
+
+.weather-app {
+  max-width: 1000px;
+  margin: 100px auto;
+}
+
+body {
+  font-family: Cerebri Sans, Helvetica, Arial, sans-serif;
+  background-image: url("../media/pinkgalaxy.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+form {
+  text-align: center;
+  margin-top: 20px;
+  width: 100%;
+}
+.suncloud {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  color: white;
+}
+
+.suncloudsmall {
+  width: 75px;
+}
+.sun {
+  width: 50px;
+}
+
+h1,
+h2,
+h3,
+li,
+a {
+  text-align: center;
+  font-size: 34px;
+  line-height: 48px;
+  font-weight: 900;
+  margin: 0;
+  font-family: "Bungee Shade", cursive;
+}
+
+h1 {
+  margin-top: 60px;
+  color: white;
+}
+
+h2 {
+  color: white;
+  padding: 0 0 24px;
+}
+
+h3 {
+  color: white;
+}
+
+li {
+  color: white;
+  list-style: none;
+  margin: 25px;
+  font-size: 20px;
+}
+
+.mb-3 button {
+  color: white;
+  background: #311644;
+  padding: 3px;
+  margin: 0px;
+  font-family: "Bungee Shade", cursive;
+}
+
+.mb-3 button:hover {
+  color: #311644;
+  background: white;
+}
+
+.col {
+  color: white;
+  font-family: "Bungee Shade", cursive;
+  left: 20px;
+}
