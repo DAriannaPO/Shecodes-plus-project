@@ -36,8 +36,7 @@ form {
 h1,
 h2,
 h3,
-li,
-a {
+li {
   text-align: center;
   font-size: 34px;
   line-height: 48px;
@@ -84,4 +83,8 @@ li {
   color: white;
   font-family: "Bungee Shade", cursive;
   left: 20px;
+}
+
+p {
+  color: #ffffff;
 }
