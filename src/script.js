@@ -30,11 +30,12 @@ form.addEventListener ("submit", searchCity);
 function displayWeatherCondition (response) {
 document.querySelector("#city").innerHTML= response.data.name;
 document.querySelector("#temperature").innerHTML = Math.round(response.data.main.temp);
-document.querySelector ("#description").innerHTML = response.data.weather[0].description;
-document.querySelector ("#humidity").innerHTML = response.data.main.humidity;
-document.querySelector ("#max-temp").innerHTML = Math.round(response.data.main.temp_max);
-document.querySelector ("#min-temp").innerHTML = Math.round(response.data.main.temp_min);
-document.querySelector ("#windspeed").innerHTML = Math.round(response.data.wind.speed);
+document.querySelector("#description").innerHTML = response.data.weather[0].description;
+document.querySelector("#humidity").innerHTML = response.data.main.humidity;
+document.querySelector("#max-temp").innerHTML = Math.round(response.data.main.temp_max);
+document.querySelector("#min-temp").innerHTML = Math.round(response.data.main.temp_min);
+document.querySelector("#windspeed").innerHTML = Math.round(response.data.wind.speed);
+document.querySelector("#icon").setAttribute("src",`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
 }
 
 
