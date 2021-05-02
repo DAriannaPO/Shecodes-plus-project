@@ -34,6 +34,7 @@ document.querySelector ("#description").innerHTML = response.data.weather[0].des
 document.querySelector ("#humidity").innerHTML = response.data.main.humidity;
 document.querySelector ("#max-temp").innerHTML = Math.round(response.data.main.temp_max);
 document.querySelector ("#min-temp").innerHTML = Math.round(response.data.main.temp_min);
+document.querySelector ("#windspeed").innerHTML = Math.round(response.data.wind.speed);
 }
 
 
