@@ -39,6 +39,7 @@ document.querySelector("#windspeed").innerHTML = Math.round(response.data.wind.s
 document.querySelector("#feels-like").innerHTML = Math.round(response.data.main.feels_like);
 document.querySelector("#icon").setAttribute("src",`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
 
+celsiusTemperature = response.data.main.temp;
 }
 
 
@@ -52,6 +53,18 @@ function search (event){
 
 let input = document.querySelector("#search-form");
 input.addEventListener ("submit", search);
+
+function displayFahrenheitTemperature (event) {
+  event.preventDefault ();
+  let fahrenheitTemperature = (celsiusTemperature * 9/5 +32);
+  let temperature = document.querySelector("#temperature");
+  temperature.innerHTML = Math.round(fahrenheitTemperature);
+}
+
+let celsiusTemperature = null;
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener ("click", displayFahrenheitTemperature);
 
 
 
