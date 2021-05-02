@@ -36,7 +36,6 @@ document.querySelector("#humidity").innerHTML = response.data.main.humidity;
 document.querySelector("#max-temp").innerHTML = Math.round(response.data.main.temp_max);
 document.querySelector("#min-temp").innerHTML = Math.round(response.data.main.temp_min);
 document.querySelector("#windspeed").innerHTML = Math.round(response.data.wind.speed);
-document.querySelector("#precipitation").innerHTML = response.data.precipitation;
 document.querySelector("#feels-like").innerHTML = Math.round(response.data.main.feels_like);
 document.querySelector("#icon").setAttribute("src",`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
 
