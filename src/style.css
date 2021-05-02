@@ -37,6 +37,7 @@ h1,
 h2,
 h3,
 h4,
+h5,
 li {
   text-align: center;
   line-height: 48px;
@@ -67,10 +68,15 @@ h4 {
   color: white;
 }
 
+h5 {
+  font-size: 20px;
+  color: white;
+}
+
 li {
   color: white;
   list-style: none;
-  margin: 25px;
+  margin: 20px;
   font-size: 20px;
 }
 
