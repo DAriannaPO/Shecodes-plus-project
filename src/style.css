@@ -9,7 +9,7 @@ html {
 
 body {
   font-family: Cerebri Sans, Helvetica, Arial, sans-serif;
-  background-image: url("../media/pinkgalaxy.jpg");
+  background-image: url("../media/ocean.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -76,7 +76,7 @@ li {
 
 .mb-3 button {
   color: white;
-  background: #311644;
+  background: #000000;
   padding: 3px;
   margin: 0px;
   font-family: "Bungee Shade", cursive;
