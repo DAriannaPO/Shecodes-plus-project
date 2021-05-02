@@ -31,7 +31,11 @@ function displayWeatherCondition (response) {
 document.querySelector("#city").innerHTML= response.data.name;
 document.querySelector("#temperature").innerHTML = Math.round(response.data.main.temp);
 document.querySelector ("#description").innerHTML = response.data.weather[0].description;
+document.querySelector ("#humidity").innerHTML = response.data.main.humidity;
+document.querySelector ("#max-temp").innerHTML = Math.round(response.data.main.temp_max);
+document.querySelector ("#min-temp").innerHTML = Math.round(response.data.main.temp_min);
 }
+
 
 function search (event){
   event.preventDefault();
