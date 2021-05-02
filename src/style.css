@@ -103,3 +103,13 @@ li {
 p {
   color: #ffffff;
 }
+
+.active {
+  color: white;
+  cursor: default;
+}
+
+.active:hover {
+  color: white;
+  text-decoration: none;
+}
