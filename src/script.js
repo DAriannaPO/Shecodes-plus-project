@@ -19,17 +19,33 @@ h4.innerHTML = `${day}, ${hour}:${minutes}`;
 
 function displayForecast() {
   let forecastElement = document.querySelector("#weather-forecast");
-  forecastElement.innerHTML = `<div class="row">
-        <div class="col-2">
-          <div class= "weather-forecast-day"> Mon</div>
-<img
+
+  let days = ["Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+
+  let forecastHTML = `<div class="row">`;
+
+  days.forEach (function (day) {
+
+  forecastHTML = 
+  forecastHTML + 
+  `<div class="col-2">
+          <div class= "weather-forecast-day"> ${day}</div>
+          <img
             class="suncloudsmall"
             src="media/sunandcloud.png"
             alt="suncloud"
               />
-              <div class = "weather-forecast-temp"> <span class = "weather-forecast-temp-max">18 °C</span> | <span class = "weather-forecast-temp-min">12 °C</span></div>
-        </div>
+              <div class = "weather-forecast-temp"> 
+              <span class = "weather-forecast-temp-max">18 °C</span>
+               | <span class = "weather-forecast-temp-min">12 °C</span>
+               </div>
       </div>`;
+  });
+
+      forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+
+  
 }
 
 function searchCity (event) {
