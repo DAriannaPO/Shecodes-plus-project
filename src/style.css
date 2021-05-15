@@ -113,3 +113,10 @@ p {
   color: white;
   text-decoration: none;
 }
+
+.weather-forecast {
+  margin-top: 20px;
+  color: white;
+  font-family: "Bungee Shade", cursive;
+  text-align: center;
+}
