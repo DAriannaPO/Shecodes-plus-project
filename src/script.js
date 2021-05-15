@@ -17,6 +17,20 @@ if (minutes <10) {
 
 h4.innerHTML = `${day}, ${hour}:${minutes}`;
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#weather-forecast");
+  forecastElement.innerHTML = `<div class="row">
+        <div class="col-2">
+          <div class= "weather-forecast-day"> Mon</div>
+<img
+            class="suncloudsmall"
+            src="media/sunandcloud.png"
+            alt="suncloud"
+              />
+              <div class = "weather-forecast-temp"> <span class = "weather-forecast-temp-max">18 °C</span> | <span class = "weather-forecast-temp-min">12 °C</span></div>
+        </div>
+      </div>`;
+}
 
 function searchCity (event) {
   event.preventDefault();
@@ -73,6 +87,8 @@ fahrenheitLink.addEventListener ("click", displayFahrenheitTemperature);
 
 let celsiusLink = document.querySelector ("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
+
+displayForecast();
 
 
 
