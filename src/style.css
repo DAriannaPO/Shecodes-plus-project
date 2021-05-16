@@ -3,13 +3,13 @@ html {
 }
 
 .weather-app {
-  max-width: 1000px;
-  margin: 100px auto;
+  max-width: 600px;
+  margin: 30px auto;
 }
 
 body {
   font-family: Cerebri Sans, Helvetica, Arial, sans-serif;
-  background-image: url("../media/ocean.jpg");
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -23,7 +23,7 @@ form {
   display: block;
   margin: 0 auto;
   width: 150px;
-  color: white;
+  color: #010051;
 }
 
 .suncloudsmall {
@@ -49,32 +49,32 @@ li {
 h1 {
   font-size: 34px;
   margin-top: 60px;
-  color: white;
+  color: #010051;
 }
 
 h2 {
   font-size: 28px;
-  color: white;
+  color: #010051;
   padding: 0 0 24px;
 }
 
 h3 {
   font-size: 24px;
-  color: white;
+  color: #010051;
 }
 
 h4 {
   font-size: 20px;
-  color: white;
+  color: #010051;
 }
 
 h5 {
   font-size: 20px;
-  color: white;
+  color: #010051;
 }
 
 li {
-  color: white;
+  color: #010051;
   list-style: none;
   margin: 25px;
   font-size: 20px;
@@ -90,33 +90,33 @@ li {
 }
 
 .mb-3 button:hover {
-  color: #311644;
+  color: #010051;
   background: white;
 }
 
 .col {
-  color: white;
+  color: #010051;
   font-family: "Bungee Shade", cursive;
   left: 20px;
 }
 
 p {
-  color: #ffffff;
+  color: #010051;
 }
 
 .active {
-  color: white;
+  color: #010051;
   cursor: default;
 }
 
 .active:hover {
-  color: white;
+  color: #010051;
   text-decoration: none;
 }
 
 .weather-forecast {
   margin-top: 20px;
-  color: white;
+  color: #010051;
   font-family: "Bungee Shade", cursive;
   text-align: center;
 }
