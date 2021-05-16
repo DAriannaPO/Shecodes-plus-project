@@ -130,20 +130,6 @@ fahrenheitLink.addEventListener ("click", displayFahrenheitTemperature);
 let celsiusLink = document.querySelector ("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
-function showPosition(position) {
-  console.log(position);
-  let latitude = position.coords.latitude;
-  let longitude = position.coords.longitude;
-  let apiKey = "f9d786d2d20b7dfc09206176024760c1";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/find?lat=${latitude}&lon=${longitude}appid=${apiKey}&units=metric`;
-  axios.get(apiUrl).then(displayWeatherCondition);
-  
-}
-function currentLocation(event) {
-  event.preventDefault();
-  navigator.geolocation.getCurrentPosition(showPosition);
-}
-
 searchCurrentCity("Leiden");
 
 

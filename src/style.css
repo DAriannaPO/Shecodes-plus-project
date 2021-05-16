@@ -22,18 +22,10 @@ form {
   margin-top: 20px;
   width: 100%;
 }
-.suncloud {
+.image {
   display: block;
   margin: 0 auto;
   width: 150px;
-  color: #010051;
-}
-
-.suncloudsmall {
-  width: 75px;
-}
-.sun {
-  width: 50px;
 }
 
 h1,
